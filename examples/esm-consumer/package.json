@@ -1,0 +1,21 @@
+{
+  "name": "@ethereum-js/multicall-examples-esm-consumer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('You must use Yarn to install, not NPM')\"",
+    "start": "node --experimental-specifier-resolution=node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dapp-builder/rpcs": "^0.1.0",
+    "@ethereum-js/multicall": "^0.0.15-beta",
+    "axios": "^1.4.0",
+    "ethers": "^6.6.3"
+  }
+}
