@@ -32,8 +32,9 @@ export class Multicall {
     let response
     if (Ethers.isV5) {
       response = await this.executeEtherV5(executeData, callOptions)
+    } else {
+      response =  await this.executeEtherV6(executeData, callOptions)
     }
-    response =  await this.executeEtherV6(executeData, callOptions)
     const results: any[] = []
     response.returnData.forEach((result: { success: boolean, returnData: any }, index: number) => {
       if (result.success) {

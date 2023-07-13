@@ -1,6 +1,6 @@
 {
   "name": "@ethereum-js/multicall",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Multicall allows multiple smart contract constant function calls to be grouped into a single call and the results aggregated into a single result",
   "main": "./build/esm/index.js",
   "scripts": {
